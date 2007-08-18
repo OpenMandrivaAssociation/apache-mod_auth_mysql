@@ -15,7 +15,7 @@ Source0:	http://prdownloads.sourceforge.net/modauthmysql/%{mod_name}-%{version}.
 Source1:	%{mod_conf}
 Patch0:		mod_auth_mysql-3.0.0-apr1x.patch
 Patch1:		mod_auth_mysql-3.0.0-htpasswd-style.diff
-BuildPrereq:	mysql-devel
+BuildRequires:	mysql-devel
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires(pre):  apache-conf >= %{apache_version}
