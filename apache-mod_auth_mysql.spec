@@ -7,7 +7,7 @@
 Summary:	Basic authentication for the apache web server using a MySQL database
 Name:		apache-%{mod_name}
 Version:	3.0.0
-Release:	%mkrel 15
+Release:	%mkrel 16
 Group:		System/Servers
 License:	Apache License
 URL:		http://sourceforge.net/projects/modauthmysql/
@@ -23,7 +23,7 @@ Requires(pre):  apache >= %{apache_version}
 Requires:	apache-conf >= %{apache_version}
 Requires:	apache >= %{apache_version}
 BuildRequires:  apache-devel >= %{apache_version}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_auth_mysql is an Apache module to authenticate users and authorize access
