@@ -7,7 +7,7 @@
 Summary:	Basic authentication for the apache web server using a MySQL database
 Name:		apache-%{mod_name}
 Version:	3.0.0
-Release:	%mkrel 20
+Release:	%mkrel 21
 Group:		System/Servers
 License:	Apache License
 URL:		http://sourceforge.net/projects/modauthmysql/
@@ -15,6 +15,7 @@ Source0:	http://prdownloads.sourceforge.net/modauthmysql/%{mod_name}-%{version}.
 Source1:	%{mod_conf}
 Patch0:		mod_auth_mysql-3.0.0-apr1x.patch
 Patch1:		mod_auth_mysql-3.0.0-htpasswd-style.diff
+Patch2:		mod_auth_mysql-3.0.0-2008-2384.diff
 BuildRequires:	mysql-devel
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
@@ -35,6 +36,7 @@ methods.
 %setup -q -n %{mod_name}-%{version}
 %patch0 -p1 -b .apr1x
 %patch1 -p0 -b .htpasswd-style
+%patch2 -p0 -b .CVE-2008-2384
 
 cp %{SOURCE1} %{mod_conf}
 
