@@ -7,7 +7,7 @@
 Summary:	Basic authentication for the apache web server using a MySQL database
 Name:		apache-%{mod_name}
 Version:	3.0.0
-Release:	%mkrel 28
+Release:	%mkrel 29
 Group:		System/Servers
 License:	Apache License
 URL:		http://sourceforge.net/projects/modauthmysql/
