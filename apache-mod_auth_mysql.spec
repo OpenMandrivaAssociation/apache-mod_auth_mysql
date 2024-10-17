@@ -10,7 +10,7 @@ Version:	3.0.0
 Release:	%mkrel 32
 Group:		System/Servers
 License:	Apache License
-URL:		http://sourceforge.net/projects/modauthmysql/
+URL:		https://sourceforge.net/projects/modauthmysql/
 Source0:	http://prdownloads.sourceforge.net/modauthmysql/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}
 Patch0:		mod_auth_mysql-3.0.0-apr1x.patch
